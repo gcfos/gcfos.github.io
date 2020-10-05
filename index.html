@@ -1,0 +1,100 @@
+---
+layout: default
+---
+
+<!-- HEADER -->
+<div class="header home">
+  <div class="container">
+    <div class="title">
+      <h1>Global Cities Free of Slavery</h1>
+      <p class="hidden-xs">A global network focussed on building community resilience against modern slavery and human trafficking.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <!-- RESEARCH INTRO -->
+  <div class="row">
+    <div class="col-md">
+      <p>Modern Slavery is a sustainable development issue for cities and communities, which can impact upon multiple aspects of human flourishing including economic prosperity, health and wellbeing, education, climate action, decent work, and peace and justice.</p>
+      <p>The significance of modern slavery as an international challenge is recognised in the UN’s Sustainable Development target 8.7; to take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and eliminate the worst forms of child labour by 2030.</p>
+    </div>
+    <div class="col-md">
+      <p>This project is the first building block for a global slavery-free cities network, which can develop, scale and share sustainable approaches to achieving resilience against slavery.</p>
+      <p>Using a two-year programme of knowledge-exchange we hope to accelerate and improve the development of place-based anti-slavery initiatives, by creating a structured dialogue on city-based anti-slavery action in diverse international contexts. Our network is funded by UK Research and Innovation via the Global Challenges Research Fund. </p>
+    </div>
+  </div><!-- end row -->
+
+
+  <!-- CITIES CARDS -->
+{% include cities.html %}
+
+
+  <!-- REPORTS CARDS -->
+  <div class="row">
+    <div class="col-lg">
+      <h2>Reports</h2>
+      <p style="height: 300px; background: white"> video... pdf...</p>
+    </div>
+  </div> <!-- end row -->
+
+
+  <!-- PEOPLE CARDS -->
+  <div class="row">
+    <div class="col-lg">
+      <h2>People</h2>
+    </div>
+  </div> <!-- end row -->
+
+  <div class="row">
+    <!--  from datafile file   -->
+    {% for person in site.data.people %}
+    <div class="col-lg-3 col-md-6 col-sm-12 pb-4" >
+      <div class="card person" >
+        <img src="{{ person.Image }}" class="rounded-circle" alt="photo">
+        <div class="card-body">
+          <h5 class="card-title">{{ person.Name }}</h5>
+          <p class="card-text">{{ person.Uni }}<br/>
+          <a href="{{ person.Link }}" >University profile <i class="fas fa-angle-right"></i></a></p>
+        </div>
+      </div>
+    </div>  <!-- end col -->
+    {% endfor %}
+  </div>  <!-- end row -->
+
+
+
+  <!-- PARTNER LOGOs -->
+  <div class="row">
+    <div class="col-lg">
+      <h2>Partners</h2>
+      <p>We work with an exciting range of partners... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere consectetur mi, non luctus justo porttitor id. Vivamus dignissim, tortor nec fermentum finibus</p>
+
+      <!-- TEMP -->
+      <p style="height: 300px; background: white">...</p>
+
+    </div>
+  </div> <!-- end row -->
+
+  <div class="row">
+    <!--  from datafile file  -->
+    {% for partner in site.data.partners %}
+    <div class="col-lg-3 col-md-6 col-sm-12 pb-4" >
+      <div class="card person" >
+        <img src="{{ person.Image }}" class="rounded-circle" alt="photo">
+        <div class="card-body">
+          <h5 class="card-title">{{ person.Name }}</h5>
+          <p class="card-text">{{ person.Uni }}</p>
+          <a href="{{ person.Link }}" >University profile <i class="fas fa-angle-right"></i></a>
+        </div>
+      </div>
+    </div>  <!-- end col -->
+    {% endfor %}
+  </div>  <!-- end row -->
+
+
+
+
+</div> <!-- end container -->

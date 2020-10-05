@@ -1,0 +1,60 @@
+<!-- FOOTER -->
+
+<footer>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-9 col-sm-12">
+        <p>Global Cities Free of Slavery</p>
+      </div>
+      <div class="col-md-3 col-sm-12">
+        <img src="GCRF.png" alt = GCRF logo/>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div style="height: 500px">Map</div>
+      </div>
+    </div>
+
+    <div class="row logos">
+      <div class="col">
+        <a href="https://www.nottingham.ac.uk/"><img src=""/></a>
+      </div>
+    </div>
+
+    <div class="row logos">
+      <!--  from datafile file   -->
+      {% for logo in site.data.logos %}
+      <div class="col-lg-3 col-md-6 col-sm-12 pb-4" >
+        <a href="{{ logo.Link }}"><img src="{{ logo.Image }}" alt="{{ logo.Alt }}"></a>
+      </div>  <!-- end col -->
+      {% endfor %}
+    </div>  <!-- end row -->
+
+  </div>
+</footer>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{{ "/vendor/jquery-3.3.1.slim.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/vendor/popper.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/vendor/bootstrap-4.3.1.min.js " | prepend: site.baseurl }}"></script>
+
+{% if page.customjs %}
+<!-- custom js -->
+{% for jsfile in page.customjs %}
+<script src='{{ jsfile | prepend: site.baseurl }}' type="text/javascript"></script>
+{% endfor %}
+{% endif %}
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74356418-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-xxx-x');
+</script>

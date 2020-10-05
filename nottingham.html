@@ -1,0 +1,100 @@
+---
+layout: default
+title: "Nottingham"
+---
+
+<!-- HEADER -->
+<div class="header nottingham">
+  <div class="container">
+    <div class="title">
+      <h1>Nottingham</h1>
+      <p class="hidden-xs">United Kingdom</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- CONTENT -->
+<div class="container">
+
+  <!-- RESEARCH INTRO -->
+  <div class="row">
+    <div class="col-md-9 intro">
+      <p>Nottingham in the UK is developing a multi-agency approach towards increasing resilience against modern slavery and human trafficking.  Multiple partners from statutory, private and voluntary sectors share the objective of making Nottingham and its surrounding County ‘slavery-free’.</p>
+      <p>At the University of Nottingham’s Rights Lab we are supporting this aspiration by undertaking research to strengthen partnership working, clarify the nature and extent of exploitation in Nottinghamshire, and develop understanding of the factors that underpin anti-slavery resilience.</p>
+      <p><b>Key areas of interest:</b><br/>
+        Tackling criminal exploitation, addressing labour exploitation, developing slavery-free communities</p>
+
+      <p><b>Hopes for the project:</b><br/>
+          To better understand the factors that underpin resilience against modern slavery in different contexts.  To learn how other cities approach common challenges.</p>
+
+    </div>
+    <div class="col-md-3">
+      <p>map..</p>
+    </div>
+  </div>
+
+
+
+  <!-- PEOPLE CARDS -->
+  <div class="row">
+    <div class="col-lg">
+      <h2>People</h2>
+    </div>
+  </div> <!-- end row -->
+
+  <div class="row">
+    <!--  from datafile file   -->
+    {% assign people = site.data.people | where: "City", "Nottingham" %}
+    {% for person in people %}
+    <div class="col-lg-3 col-md-6 col-sm-12 pb-4" >
+      <div class="card person" >
+        <img src="{{ person.Image }}" class="rounded-circle" alt="photo">
+        <div class="card-body">
+          <h5 class="card-title">{{ person.Name }}</h5>
+          <p class="card-text">{{ person.Uni }}<br/>
+          <a href="{{ person.Link }}" >University profile <i class="fas fa-angle-right"></i></a></p>
+        </div>
+      </div>
+    </div>  <!-- end col -->
+    {% endfor %}
+  </div>  <!-- end row -->
+
+
+
+  <!-- PARTNER LOGOs -->
+  <div class="row">
+    <div class="col-lg">
+      <h2>Partners</h2>
+      <p style="height: 300px">partner logos ...</p>
+
+    </div>
+  </div> <!-- end row -->
+
+  <div class="row">
+    <!--  from datafile file  -->
+    {% for person in site.data.partners %}
+    <div class="col-lg-3 col-md-6 col-sm-12 pb-4" >
+      <div class="card person" >
+        <img src="{{ person.Image }}" class="rounded-circle" alt="photo">
+        <div class="card-body">
+          <h5 class="card-title">{{ person.Name }}</h5>
+          <p class="card-text">{{ person.Uni }}</p>
+          <a href="{{ person.Link }}" >University profile <i class="fas fa-angle-right"></i></a>
+        </div>
+      </div>
+    </div>  <!-- end col -->
+    {% endfor %}
+  </div>  <!-- end row -->
+
+</div> <!-- end container -->
+
+
+
+
+<div class="prefooter">
+  <div class="container">
+    <!-- CITIES CARDS -->
+{% include cities.html %}
+  </div>
+</div>

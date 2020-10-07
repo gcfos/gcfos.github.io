@@ -1,8 +1,9 @@
 - Title: Bangkok
-  Blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere consectetur mi, non luctus justo porttitor id  Vivamus dignissim, tortor."
+  Blurb: "Population 8M. Key areas of interest: anti-trafficking in person, exploitation, online child sexual exploitation, Gender Based Exploitation, Gender Based Violence"
   Link: "Bangkok.html"
   Image: "/images/Bangkok.thumb.jpg"
-  Image source: https://pixabay.com/photos/bangkok-cityscape-city-scape-4309812/
+  Mockup Image source: https://pixabay.com/photos/bangkok-cityscape-city-scape-4309812/
+  Image source: https://pixabay.com/photos/grand-palace-bangkok-temple-night-1822487/
 
 - Title: Maputo
   Blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere consectetur mi, non luctus justo porttitor id  Vivamus dignissim, tortor."
@@ -20,4 +21,6 @@
   Blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere consectetur mi, non luctus justo porttitor id  Vivamus dignissim, tortor."
   Link: "Rio.html"
   Image: "/images/Rio.thumb.jpg"
-  Image source: https://pixabay.com/photos/brazil-rio-landscape-tourism-beach-4809018/
+  Moxckup Image source: https://pixabay.com/photos/brazil-rio-landscape-tourism-beach-4809018/
+  Image source: https://pixabay.com/photos/brazil-rio-landscape-tourism-ocean-4809017/
+  Attribution: 'Image by <a href="https://pixabay.com/users/guertzen-14514841/">Jose Guertzenstein</a>'

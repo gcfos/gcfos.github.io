@@ -4,7 +4,10 @@ body            {background: #f2f2f2}
 
 .header         { background-size: cover; min-height: 500px; padding-top: 20px; border-bottom: 0; margin-bottom: 30px}
 .home           {background: url(/images/city.jpg) no-repeat center center;}
-.nottingham     {background: url(/images/nottingham.jpg) no-repeat center center;}
+.Nottingham     {background: url(/images/Nottingham.jpg) no-repeat center center;}
+.Rio            {background: url(/images/Rio.jpg) no-repeat center center;}
+.Bangkok        {background: url(/images/Bangkok.jpg) no-repeat center center;}
+
 
 .header .title  {width: 50%; color: white; /*background: rgba(204, 204, 204, 0.8);*/ padding: 10px; }
 .title p        {margin-botton: 0}
@@ -20,15 +23,18 @@ h2              {margin-top: 30px}
 
 
 /* cards */
+.card           {border: none; border-radius: 0}
 .city           {min-height: 380px}
 .card-title     {text-align: left}
 .card-text      {text-align: left; font-size: 90%}
-.card-img-top   {max-height: 140px; width:auto; object-fit: cover;}
+.card-img-top   {max-height: 140px; width:auto; object-fit: cover; border-top-left-radius: 0; border-top-right-radius: 0}
 .card-body      {padding-bottom: 0.5rem}
 .card-footer    {padding-top: 0; background-color: inherit; border-top: 0}
 
+.person               {min-height: 300px}
 .person img           {margin: 20px auto 0px; width: 140px}
 .person .card-title   {margin-bottom: 0}
+
 
 
 

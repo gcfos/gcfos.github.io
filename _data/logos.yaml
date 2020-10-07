@@ -8,12 +8,17 @@
   Link: "Maputo.html"
   Image: "/images/Maputo.logo.jpg"
 
-- Title: Nottingham uni
-  Alt: University logo
+- Title: Nottingham
+  Alt: University of Nottingham logo
   Link: "https://www.nottingham.ac.uk/"
-  Image: "/images/Nottingham.logo.jpg"
+  Image: "/images/Nottingham.logo.png"
 
-- Title: Rio uni
-  Alt: University logo
-  Link: "Rio.html"
-  Image: "/images/Rio.logo.jpg"
+- Title: Rio
+  Alt: Pontifical Catholic University of Rio de Janeiro logo
+  Link: "https://www.puc-rio.br/english/"
+  Image: "/images/PUC.logo.png"
+
+- Title: Rio
+  Alt: BRICS Policy Center logo
+  Link: "https://bricspolicycenter.org/"
+  Image: "/images/BRICS.logo.png"

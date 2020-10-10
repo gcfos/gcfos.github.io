@@ -1,18 +1,3 @@
-- Title: Bangkok uni
-  Alt: University logo
-  Link: "Bangkok.html"
-  Image: "/images/Bangkok.logo.jpg"
-
-- Title: Maputo uni
-  Alt: University logo
-  Link: "Maputo.html"
-  Image: "/images/Maputo.logo.jpg"
-
-- Title: Nottingham
-  Alt: University of Nottingham logo
-  Link: "https://www.nottingham.ac.uk/"
-  Image: "/images/Nottingham.logo.png"
-
 - Title: Rio
   Alt: Pontifical Catholic University of Rio de Janeiro logo
   Link: "https://www.puc-rio.br/english/"
@@ -22,3 +7,21 @@
   Alt: BRICS Policy Center logo
   Link: "https://bricspolicycenter.org/"
   Image: "/images/BRICS.logo.png"
+
+
+- Title: Nottingham
+  Alt: University of Nottingham logo
+  Link: "https://www.nottingham.ac.uk/"
+  Image: "/images/Nottingham.logo.png"
+
+
+
+- Title: Bangkok
+  Alt: Institute of Asian Studies Chulalongkorn University logo
+  Link: "http://www.ias.chula.ac.th/en/"
+  Image: "/images/IAS.logo.png"
+
+- Title: Maputo
+  Alt: Eduardo Mondlane University logo
+  Link: "https://www.uem.mz/"
+  Image: "/images/uem.logo.png"

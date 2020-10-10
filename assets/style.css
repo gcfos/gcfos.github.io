@@ -5,17 +5,20 @@ body            {background: #f2f2f2}
 .header         { background-size: cover; min-height: 500px; padding-top: 20px; border-bottom: 0; margin-bottom: 30px}
 .home           {background: url(/images/city.jpg) no-repeat center center;}
 .Nottingham     {background: url(/images/Nottingham.jpg) no-repeat center center;}
-.Rio            {background: url(/images/Rio.jpg) no-repeat center center;}
+.Rio            {background: url(/images/Rio.jpg) no-repeat top center;}
 .Bangkok        {background: url(/images/Bangkok.jpg) no-repeat center center;}
 
 
 .header .title  {width: 50%; color: white; /*background: rgba(204, 204, 204, 0.8);*/ padding: 10px; }
 .title p        {margin-botton: 0}
 
-footer          {background: #c3c3c3; padding: 50px 0}
-.prefooter      {background: #CCC}
+footer          {background: #c3c3c3; padding: 50px 0; margin-top: 30px;}
+.prefooter      {background: #CCC; margin-top: 20px;  margin-bottom: -30px; padding-bottom: 30px;}
 footer img      {max-width: 100%}
-
+.GCRF           {text-align: right}
+.GCRF img       {max-height: 100px; border: 10px solid white;}
+.logos          {margin-top: 60px; text-align: center; }
+.logos img      { max-height: 180px;  max-width: 240px; vertical-align: middle; padding: 20px 30px;}
 
 /* standard */
 h2              {margin-top: 30px}

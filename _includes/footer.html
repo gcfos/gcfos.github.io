@@ -5,33 +5,30 @@
 
     <div class="row">
       <div class="col-md-9 col-sm-12">
-        <p>Global Cities Free of Slavery<br/>
-        A xxx project funded by ---- etc etc etc </p>
+        <h3>Global Cities Free of Slavery</h3>
+        <p><i>A UK Global Challenges Research Fund project funded by UKRI</i>.</p>
       </div>
-      <div class="col-md-3 col-sm-12">
-        <!-- <img src="GCRF.png" alt = "GCRF logo"/> -->
+      <div class="col-md-3 col-sm-12 GCRF">
+        <a  href="https://www.ukri.org/research/global-challenges-research-fund/"><img src="/images/GCRF.png" alt="GCRF logo"/></a>
       </div>
     </div>
 
-    <div class="row">
+<!--
+    <div class="row map">
       <div class="col">
-        <div style="height: 500px">Map showing the 4 cities</div>
+        <div style="xheight: 500px">Map showing the 4 cities</div>
+        <img src="/images/worldmap.png" style="width:60%; opacity: 0.6"/>
       </div>
     </div>
+-->
 
     <div class="row logos">
       <div class="col">
-        <a href="https://www.nottingham.ac.uk/"><img src=""/></a>
-      </div>
-    </div>
-
-    <div class="row logos">
       <!--  from datafile file   -->
       {% for logo in site.data.logos %}
-      <div class="col-lg-3 col-md-6 col-sm-12 pb-4" >
         <a href="{{ logo.Link }}"><img src="{{ logo.Image }}" alt="{{ logo.Alt }}"></a>
-      </div>  <!-- end col -->
       {% endfor %}
+      </div>
     </div>  <!-- end row -->
 
   </div>

@@ -4,6 +4,7 @@ body            {background: #f2f2f2}
 
 .header         { background-size: cover; height: 400px; padding-top: 20px; border-bottom: 0; margin-bottom: 30px}
 .home           {background: url(/images/city.jpg) no-repeat top center;}
+.other          {background: url(/images/city.jpg) no-repeat center center; height: 200px;}
 .Nottingham     {background: url(/images/Nottingham.jpg) no-repeat top center;}
 .Rio            {background: url(/images/Rio.jpg) no-repeat top left;}
 .Bangkok        {background: url(/images/Bangkok.jpg) no-repeat center left;}
@@ -48,6 +49,7 @@ a               {color: #2898DA}
   /* center so less sky */
   .header         { background-size: cover; height: 500px; padding-top: 20px; border-bottom: 0; margin-bottom: 30px}
   .home           {background: url(/images/city.jpg) no-repeat center center;}
+  .other          {background: url(/images/city.jpg) no-repeat center center; height: 300px;}
   .Nottingham     {background: url(/images/Nottingham.jpg) no-repeat center center;}
   .Rio            {background: url(/images/Rio.jpg) no-repeat center center;}
   .Bangkok        {background: url(/images/Bangkok.jpg) no-repeat center center;}
@@ -59,6 +61,7 @@ a               {color: #2898DA}
   /* bottom so even less sky */
   .header         { background-size: cover; height: 500px; padding-top: 20px; border-bottom: 0; margin-bottom: 30px}
   .home           {background: url(/images/city.jpg) no-repeat bottom center;}
+  .other          {background: url(/images/city.jpg) no-repeat center center; height: 300px;}
   .Nottingham     {background: url(/images/Nottingham.jpg) no-repeat center center;}
   .Rio            {background: url(/images/Rio.jpg) no-repeat center center;}
   .Bangkok        {background: url(/images/Bangkok.jpg) no-repeat bottom center;}

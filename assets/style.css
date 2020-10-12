@@ -2,14 +2,14 @@
 
 body            {background: #f2f2f2}
 
-.header         { background-size: cover; min-height: 500px; padding-top: 20px; border-bottom: 0; margin-bottom: 30px}
-.home           {background: url(/images/city.jpg) no-repeat center center;}
-.Nottingham     {background: url(/images/Nottingham.jpg) no-repeat center center;}
-.Rio            {background: url(/images/Rio.jpg) no-repeat top center;}
-.Bangkok        {background: url(/images/Bangkok.jpg) no-repeat center center;}
+.header         { background-size: cover; height: 400px; padding-top: 20px; border-bottom: 0; margin-bottom: 30px}
+.home           {background: url(/images/city.jpg) no-repeat top center;}
+.Nottingham     {background: url(/images/Nottingham.jpg) no-repeat top center;}
+.Rio            {background: url(/images/Rio.jpg) no-repeat top left;}
+.Bangkok        {background: url(/images/Bangkok.jpg) no-repeat center left;}
+.Maputo        {background: url(/images/Maputo.jpg) no-repeat center 75%;}
 
-
-.header .title  {width: 50%; color: white; /*background: rgba(204, 204, 204, 0.8);*/ padding: 10px; }
+.header .title  {color: white; /*background: rgba(204, 204, 204, 0.8);*/ padding: 10px; }
 .title p        {margin-botton: 0}
 
 footer          {background: #c3c3c3; padding: 50px 0; margin-top: 30px;}
@@ -24,6 +24,8 @@ footer img      {max-width: 100%}
 h2              {margin-top: 30px}
 .intro          {font-size: 120%}
 
+.btn-primary    { color: #fff; background-color: #2898DA; border-color: #2898DA; }
+a               {color: #2898DA}
 
 /* cards */
 .card           {border: none; border-radius: 0}
@@ -40,8 +42,34 @@ h2              {margin-top: 30px}
 
 
 
+/* larger devices */
+
+@media (min-width:  768px) {
+  /* center so less sky */
+  .header         { background-size: cover; height: 500px; padding-top: 20px; border-bottom: 0; margin-bottom: 30px}
+  .home           {background: url(/images/city.jpg) no-repeat center center;}
+  .Nottingham     {background: url(/images/Nottingham.jpg) no-repeat center center;}
+  .Rio            {background: url(/images/Rio.jpg) no-repeat center center;}
+  .Bangkok        {background: url(/images/Bangkok.jpg) no-repeat center center;}
+  .Maputo        {background: url(/images/Maputo.jpg) no-repeat center center;}
+}
 
 
+@media (min-width:  992px) {
+  /* bottom so even less sky */
+  .header         { background-size: cover; height: 500px; padding-top: 20px; border-bottom: 0; margin-bottom: 30px}
+  .home           {background: url(/images/city.jpg) no-repeat bottom center;}
+  .Nottingham     {background: url(/images/Nottingham.jpg) no-repeat center center;}
+  .Rio            {background: url(/images/Rio.jpg) no-repeat center center;}
+  .Bangkok        {background: url(/images/Bangkok.jpg) no-repeat bottom center;}
+  .Maputo        {background: url(/images/Maputo.jpg) no-repeat bottom center;}
+  .header .title  {width: 70%;}
+}
+
+
+@media (min-width: 1200px) {
+  .header .title  {width: 50%;}
+}
 
 /*
  * Font Awesome Free 5.8.1 by @fontawesome - https://fontawesome.com

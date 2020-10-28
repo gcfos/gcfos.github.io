@@ -40,7 +40,10 @@
         <div class="card-body">
           <h5 class="card-title">{{ person.Name }}</h5>
           <p class="card-text">{{ person.Uni }}<br/>
-          <a href="{{ person.Link }}" >University profile <i class="fas fa-angle-right"></i></a></p>
+          {% if person.Link %}
+          <a href="{{ person.Link }}" >University profile <i class="fas fa-angle-right"></i></a>
+          {% endif %}
+          </p>
         </div>
       </div>
     </div>  <!-- end col -->

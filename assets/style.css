@@ -22,7 +22,7 @@ footer img      {max-width: 100%}
 .logos img      { max-height: 180px;  max-width: 240px; vertical-align: middle; padding: 20px 30px;}
 
 /* standard */
-h2              {margin-top: 30px}
+h2              {margin-top: 50px}
 .intro          {font-size: 120%}
 
 .btn-primary    { color: #fff; background-color: #2898DA; border-color: #2898DA; }
@@ -31,14 +31,21 @@ a               {color: #2898DA}
 /* cards */
 .card           {border: none; border-radius: 0}
 .city           {min-height: 380px}
+.city i         {padding-left: 5px;}
 .card-title     {text-align: left}
 .card-text      {text-align: left; font-size: 90%}
 .card-img-top   {max-height: 140px; width:auto; object-fit: cover; border-top-left-radius: 0; border-top-right-radius: 0}
 .card-body      {padding-bottom: 0.5rem}
 .card-footer    {padding-top: 0; background-color: inherit; border-top: 0}
 
+.report .card-title   {margin-bottom: 0px}
+.report .card-img     {height:100%; object-fit: cover; top:0; border-radius: 0;}
+.card-date            {font-size: 90%; font-style: italic; color: #666}
+.report i             {padding-right: 5px;}
+
 .person               {min-height: 300px}
 .person img           {margin: 20px auto 0px; width: 140px}
+.person .fa-user      {color: #ccc; margin: 40px auto 20px; font-size: 100px}
 .person .card-title   {margin-bottom: 0}
 
 

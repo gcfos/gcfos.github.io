@@ -32,16 +32,42 @@ layout: default
 {% include cities.html %}
 
 
-  <!-- REPORTS CARDS -->
+
+
+  <!-- REPORTS CARDS - ->
   <div class="row">
     <div class="col-lg">
       <h2>Reports</h2>
       <p>A short film about the first workshop to begin the construction of a network of global cities engaged in the eradication of modern slavery</p>
       <div class="embed-responsive embed-responsive-16by9">
-        <iframe src="https://player.vimeo.com/video/420383178" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/420383178?title=0&portrait=0&byline=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div> <!- - end row -->
+
+
+
+  <!-- REPORTS CARDS -->
+  <div class="row">
+    <div class="col-lg">
+      <h2>Reports</h2>
+    </div>
+  </div> <!-- end row -->
+
+{% include reports.html %}
+
+
+  <div class="row" style="padding-top: 20px">
+    <div class="col-md-4">
+      <p>A short film about the first workshop to begin the construction of a network of global cities engaged in the eradication of modern slavery:</p>
+    </div>
+    <div class="col-md-8">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="https://player.vimeo.com/video/420383178?title=0&portrait=0&byline=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
       </div>
     </div>
   </div> <!-- end row -->
+
 
 
   <!-- PEOPLE CARDS -->
@@ -56,7 +82,11 @@ layout: default
     {% for person in site.data.people %}
     <div class="col-lg-3 col-md-6 col-sm-12 pb-4" >
       <div class="card person" >
+        {% if person.Image %}
         <img src="{{ person.Image }}" class="rounded-circle" alt="photo">
+        {% else %}
+        <i class="far fa-user"></i>
+        {% endif %}
         <div class="card-body">
           <h5 class="card-title">{{ person.Name }}</h5>
           <p class="card-text">{{ person.Uni }}<br/>

@@ -20,6 +20,7 @@ footer img      {max-width: 100%}
 .GCRF img       {max-height: 100px; border: 10px solid white;}
 .logos          {margin-top: 60px; text-align: center; }
 .logos img      { max-height: 180px;  max-width: 240px; vertical-align: middle; padding: 20px 30px;}
+.smallprint     {padding-top: 60px; text-align: right; font-size: 80%; font-style: italic;}
 
 /* standard */
 h2              {margin-top: 50px}
@@ -80,6 +81,40 @@ a               {color: #2898DA}
 @media (min-width: 1200px) {
   .header .title  {width: 50%;}
 }
+
+
+/* cookie alert */
+.cookiealert {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 !important;
+    z-index: 999;
+    visibility: hidden;
+    border-radius: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+}
+
+.cookiealert.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+.cookiealert a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.cookiealert button {
+    margin-left: 15px;
+    vertical-align: baseline;
+}
+
+
 
 /*
  * Font Awesome Free 5.8.1 by @fontawesome - https://fontawesome.com

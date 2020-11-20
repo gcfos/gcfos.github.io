@@ -7,6 +7,7 @@
     "use strict";
     var cookieAlert = document.querySelector(".cookiealert");
     var acceptCookies = document.querySelector(".acceptcookies");
+    var declineCookies = document.querySelector(".declinecookies");
 
     if (!cookieAlert) {
        return;
@@ -15,18 +16,22 @@
     cookieAlert.offsetHeight; // Force browser to trigger reflow (https://stackoverflow.com/a/39451131)
 
 
-    // Show the alert if we cant find the "cookiesOK" cookie
-    // Else cookiesOK so enable Google Analytics
+    // No "cookiesOK" cookie -> show cookie banner with choice
+    // If "cookiesOK" cookie = true -> enable Google Analytics
+    // Else declined -> do nothing
     if (!getCookie("cookiesOK")) {
         cookieAlert.classList.add("show");
-    } else {
+    } else if (getCookie("cookiesOK") == "true"){
         enableAnalytics ();
     }
 
-    // When clicking on the agree button, create a 90 day
-    // cookie to remember user's choice, enable Google Analytics
+
+    // When clicking on the AGREE button:
+    // create a 90 day cookie to remember user's choice,
+    // enable Google Analytics,
     // and close the banner
     acceptCookies.addEventListener("click", function () {
+        //console.log ("accept cookies");
         setCookie("cookiesOK", true, 90);
         cookieAlert.classList.remove("show");
         enableAnalytics ();
@@ -34,6 +39,22 @@
         // dispatch the accept event
         window.dispatchEvent(new Event("cookieAlertAccept"))
     });
+
+
+    // When clicking on the DECLINE button:
+    // create a 90 day cookie to remember user's choice,
+    // enable Google Analytics,
+    // and close the banner
+    declineCookies.addEventListener("click", function () {
+        //console.log ("decline cookies");
+        setCookie("cookiesOK", false, 90);
+        cookieAlert.classList.remove("show");
+
+        // dispatch the accept event
+        window.dispatchEvent(new Event("cookieAlertAccept"))
+    });
+
+
 
 
     // Enable Google Analytics (only called if accepted)

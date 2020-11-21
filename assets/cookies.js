@@ -31,7 +31,7 @@
     // enable Google Analytics,
     // and close the banner
     acceptCookies.addEventListener("click", function () {
-        //console.log ("accept cookies");
+        console.log ("accept cookies");
         setCookie("cookiesOK", true, 90);
         cookieAlert.classList.remove("show");
         enableAnalytics ();
@@ -46,7 +46,7 @@
     // enable Google Analytics,
     // and close the banner
     declineCookies.addEventListener("click", function () {
-        //console.log ("decline cookies");
+        console.log ("decline cookies");
         setCookie("cookiesOK", false, 90);
         cookieAlert.classList.remove("show");
 

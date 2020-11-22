@@ -31,7 +31,7 @@
     // enable Google Analytics,
     // and close the banner
     acceptCookies.addEventListener("click", function () {
-        console.log ("accept cookies");
+        //console.log ("accept cookies");
         setCookie("cookiesOK", true, 90);
         cookieAlert.classList.remove("show");
         enableAnalytics ();
@@ -46,7 +46,7 @@
     // enable Google Analytics,
     // and close the banner
     declineCookies.addEventListener("click", function () {
-        console.log ("decline cookies");
+        //console.log ("decline cookies");
         setCookie("cookiesOK", false, 90);
         cookieAlert.classList.remove("show");
 
@@ -59,18 +59,18 @@
 
     // Enable Google Analytics (only called if accepted)
     function enableAnalytics (){
-      console.log("enable Google Analytics...");
+      //console.log("enable Google Analytics...");
 
       $.ajax({
-        url: "https://www.googletagmanager.com/gtag/js?id=G-TY2N829KV3",
+        url: "https://www.googletagmanager.com/gtag/js?id=G-6D615BBD35",
         dataType: "script",
         cache: true,
         success: function() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-TY2N829KV3');
-          console.log("tag Google Analytics pageload");
+          gtag('config', 'G-6D615BBD35');
+          //console.log("tag Google Analytics pageload");
         }
       });
 

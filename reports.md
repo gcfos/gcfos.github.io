@@ -9,7 +9,7 @@ sortTitle: A
 <div class="row">
   <div class="col">
     <h2>Reports</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget est pretium, pellentesque libero sed, cursus ex. Vestibulum non rutrum odio. Suspendisse potenti.</p>
+    
   </div>
 </div>
 

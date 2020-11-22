@@ -38,7 +38,7 @@ In order to track your session usage, Google uses a cookie ("_ga") with a random
         </button>
       </div>
       <div class="modal-body">
-        <p>We've removed the "cookiesOK" cookie from your browser and will no longer use cookies on this site.</p>
+        <p>We've removed our cookie from your browser and will no longer use cookies on this site.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
@@ -54,7 +54,7 @@ var deleteCookies = document.querySelector(".deletecookies");
 
 // When clicking on the delete button: delete the "cookiesOK" cookie (set expires to past)
 deleteCookies.addEventListener("click", function () {
-  console.log ("delete cookie")
+  //console.log ("delete cookie")
   document.cookie = "cookiesOK=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
   $('.cookieremoved').modal("show");
 });

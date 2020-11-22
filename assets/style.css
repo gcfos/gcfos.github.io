@@ -33,7 +33,7 @@ footer img      {max-width: 100%}
 .smallprint a   {color: #212529; }
 
 /* standard */
-h2              {margin-top: 50px}
+h2              {margin-top: 50px; margin-bottom: 20px}
 .intro          {font-size: 120%}
 
 .btn-primary    { color: #fff; background-color: #2898DA; border-color: #2898DA; }
@@ -41,7 +41,6 @@ a               {color: #2898DA}
 
 /* cards */
 .card           {border: none; border-radius: 0}
-.city           {min-height: 380px}
 .city i         {padding-left: 5px;}
 .card-title     {text-align: left}
 .card-text      {text-align: left; font-size: 90%}
@@ -50,20 +49,23 @@ a               {color: #2898DA}
 .card-footer    {padding-top: 0; background-color: inherit; border-top: 0}
 
 .report .card-title   {margin-bottom: 0px}
-.report .card-img     {height:100%; object-fit: cover; top:0; border-radius: 0;}
+.report .card-img     {/*height:100%; */object-fit: cover; border-radius: 0;}
 .card-date            {font-size: 90%; font-style: italic; color: #666}
 .report i             {padding-right: 5px;}
 
-.person               {min-height: 300px}
+.person               {margin: 0 10% }
 .person img           {margin: 20px auto 0px; width: 140px}
 .person .fa-user      {color: #ccc; margin: 40px auto 20px; font-size: 100px}
 .person .card-title   {margin-bottom: 0}
 
 
 
-/* larger devices */
-
+/* MEDIUM DEVICES */
 @media (min-width:  768px) {
+  .city               {min-height: 360px}
+  .person             {min-height: 300px; margin: 0 0}
+  .report .card-bodyX  {min-height: 220px}
+
   /* center so less sky */
   .header         { background-size: cover; height: 500px; padding-top: 20px; border-bottom: 0; margin-bottom: 30px}
   .home           {background: url(/images/city.jpg) no-repeat center center;}
@@ -74,8 +76,12 @@ a               {color: #2898DA}
   .Maputo        {background: url(/images/Maputo.jpg) no-repeat center center;}
 }
 
-
+/* LARGE DEVICES */
 @media (min-width:  992px) {
+  .city               {min-height: 420px}
+  .person             {min-height: 330px}
+  .report .card-bodyX  {min-height: 270px}
+
   /* bottom so even less sky */
   .header         { background-size: cover; height: 500px; padding-top: 20px; border-bottom: 0; margin-bottom: 30px}
   .home           {background: url(/images/city.jpg) no-repeat bottom center;}
@@ -87,9 +93,13 @@ a               {color: #2898DA}
   .header .title  {width: 70%;}
 }
 
-
+/* EXTRA LARGE DEVICES */
 @media (min-width: 1200px) {
   .header .title  {width: 50%;}
+
+  .city               {min-height: 380px}
+  .person             {min-height: 300px}
+  .report .card-bodyX  {min-height: 200px}
 }
 
 
